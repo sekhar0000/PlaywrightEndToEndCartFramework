@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","9594","execute end-to-end test flow @end-to-end","chromium","2026-07-30","passed","2026-07-30","","ninjaEndToEnd.spec.ts","",""

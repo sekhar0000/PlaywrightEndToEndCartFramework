@@ -1,13 +1,13 @@
 import { MyAccountPage } from "../pages/ninjaMyaccount";
 import { LogoutPage } from "../pages/ninjaLogout";
-import { HomePage } from "../../Users/aparna/Downloads/Project+files (1)/Project files/pages/HomePage";
+import { Homepage } from "../pages/ninjaHomepage";
 import { TestConfig } from "../test.config";
 import { LoginPage } from "../pages/ninjaLogin";
 import{test,expect}from "@playwright/test"
 
 
 let config : TestConfig;
-let homepage:HomePage;
+let homepage:Homepage;
 let loginpage: LoginPage;
 let myaccountpage: MyAccountPage;
 let logout: LogoutPage;
@@ -20,7 +20,7 @@ test.beforeEach(async({page})=>{
     config=new TestConfig();
     await page.goto(config.appurl);
 
-    homepage =new HomePage(page);
+    homepage =new Homepage(page);
     loginpage =new LoginPage(page)
     myaccountpage =new MyAccountPage(page);
     logout=new LogoutPage(page)
